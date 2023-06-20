@@ -9,21 +9,11 @@
 .square {
   width: 20px;
   height: 20px;
-  background-color: rgb(29, 29, 29);
+
   margin: 2px;
 }
 
-.square:hover {
-  cursor: pointer;
-  animation: 1s changing linear forwards;
-}
 
-@keyframes changing {
-  0% {
-    background-color: red;
-  }
-  100% {
-    background-color: white;
-  }
-}
+
+
 
