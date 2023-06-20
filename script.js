@@ -7,9 +7,11 @@ for (let i = 0; i < squares; i++) {
   container.appendChild(innerDiv);
 
   innerDiv.addEventListener('mouseover', () => {
-    innerDiv.style.backgroundColor = "rgb(29, 29, 29)";
-    setTimeout(() => {
-      innerDiv.style.backgroundColor = "";
-    }, 1000);
+    innerDiv.style.animation = "changing 1s linear forwards";
+  });
+
+  innerDiv.addEventListener('mouseout', () => {
+    innerDiv.style.animation = "";
   });
 }
+
